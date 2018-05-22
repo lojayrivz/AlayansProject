@@ -27,11 +27,29 @@ public class LoginServlet extends HttpServlet {
 		String password = request.getParameter("password");
 
 		boolean isValidUser = service.validateUser(name, password);
+		int usertype=service.validateType(name,password);
 
 		if (isValidUser) {
-			request.setAttribute("name", name);
-			request.getRequestDispatcher("/WEB-INF/views/welcome.jsp").forward(
-					request, response);
+			switch(usertype){
+				case 1:
+					request.setAttribute("name", "Admin Rexes");
+					request.getRequestDispatcher("/WEB-INF/views/WelcomeAdmin.jsp").forward(request, response);
+					break;
+				case 2:
+					request.setAttribute("name", "Facilitator Jarrhey");
+					request.getRequestDispatcher("/WEB-INF/views/WelcomeFacilitator.jsp").forward(request, response);
+					break;
+				case 3:
+					request.setAttribute("name", "Supervisor Cleavon");
+					request.getRequestDispatcher("/WEB-INF/views/WelcomeSupervisor.jsp").forward(request, response);
+					break;
+				case 4:
+					request.setAttribute("name", "Trainee Keenan");
+					request.getRequestDispatcher("/WEB-INF/views/WelcomeTrainee.jsp").forward(request, response);
+					break;
+				default: break;
+			}
+			
 		} else {
 			request.setAttribute("errorMessage", "Invalid Credentials!!");
 			request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(

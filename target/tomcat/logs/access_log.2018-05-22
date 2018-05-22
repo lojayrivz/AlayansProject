@@ -1,0 +1,13 @@
+0:0:0:0:0:0:0:1 - - [22/May/2018:21:30:49 +0800] "GET / HTTP/1.1" 200 1450 http-bio-8080-exec-1 187
+0:0:0:0:0:0:0:1 - - [22/May/2018:21:30:49 +0800] "GET /webjars/jquery/1.9.1/jquery.min.js HTTP/1.1" 200 92629 http-bio-8080-exec-2 72
+0:0:0:0:0:0:0:1 - - [22/May/2018:21:30:49 +0800] "GET /webjars/bootstrap/3.3.6/js/bootstrap.min.js HTTP/1.1" 200 36868 http-bio-8080-exec-4 66
+0:0:0:0:0:0:0:1 - - [22/May/2018:21:30:49 +0800] "GET /webjars/bootstrap/3.3.6/css/bootstrap.min.css HTTP/1.1" 200 121260 http-bio-8080-exec-3 118
+0:0:0:0:0:0:0:1 - - [22/May/2018:21:30:49 +0800] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-7 3
+0:0:0:0:0:0:0:1 - - [22/May/2018:21:30:55 +0800] "POST /login.do HTTP/1.1" 200 1450 http-bio-8080-exec-8 5
+0:0:0:0:0:0:0:1 - - [22/May/2018:21:31:06 +0800] "POST /login.do HTTP/1.1" 200 2044 http-bio-8080-exec-9 121
+0:0:0:0:0:0:0:1 - - [22/May/2018:22:15:22 +0800] "GET / HTTP/1.1" 200 1450 http-bio-8080-exec-1 96
+0:0:0:0:0:0:0:1 - - [22/May/2018:22:15:33 +0800] "POST /login.do HTTP/1.1" 200 1450 http-bio-8080-exec-6 5
+0:0:0:0:0:0:0:1 - - [22/May/2018:22:15:43 +0800] "POST /login.do HTTP/1.1" 200 1450 http-bio-8080-exec-7 2
+0:0:0:0:0:0:0:1 - - [22/May/2018:22:18:15 +0800] "POST /login.do HTTP/1.1" 200 2040 http-bio-8080-exec-9 908
+0:0:0:0:0:0:0:1 - - [22/May/2018:22:30:07 +0800] "GET / HTTP/1.1" 200 1450 http-bio-8080-exec-1 131
+0:0:0:0:0:0:0:1 - - [22/May/2018:22:30:10 +0800] "POST /login.do HTTP/1.1" 200 2046 http-bio-8080-exec-2 47
