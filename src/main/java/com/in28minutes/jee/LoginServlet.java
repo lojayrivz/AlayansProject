@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws IOException, ServletException {
-		request.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(
+		request.getRequestDispatcher("/WEB-INF/views/Content/Login.jsp").forward(
 				request, response);
 	}
 
@@ -33,19 +33,19 @@ public class LoginServlet extends HttpServlet {
 			switch(usertype){
 				case 1:
 					request.setAttribute("name", "Admin Rexes");
-					request.getRequestDispatcher("/WEB-INF/views/WelcomeAdmin.jsp").forward(request, response);
+					request.getRequestDispatcher("/WEB-INF/views/Admin/WelcomeAdmin.jsp").forward(request, response);
 					break;
 				case 2:
 					request.setAttribute("name", "Facilitator Jarrhey");
-					request.getRequestDispatcher("/WEB-INF/views/WelcomeFacilitator.jsp").forward(request, response);
+					request.getRequestDispatcher("/WEB-INF/views/Facilitator/WelcomeFacilitator.jsp").forward(request, response);
 					break;
 				case 3:
 					request.setAttribute("name", "Supervisor Cleavon");
-					request.getRequestDispatcher("/WEB-INF/views/WelcomeSupervisor.jsp").forward(request, response);
+					request.getRequestDispatcher("/WEB-INF/views/Supervisor/WelcomeSupervisor.jsp").forward(request, response);
 					break;
 				case 4:
 					request.setAttribute("name", "Trainee Keenan");
-					request.getRequestDispatcher("/WEB-INF/views/WelcomeTrainee.jsp").forward(request, response);
+					request.getRequestDispatcher("/WEB-INF/views/Trainee/WelcomeTrainee.jsp").forward(request, response);
 					break;
 				default: break;
 			}
