@@ -1,6 +1,9 @@
 package com.in28minutes.db.skillsassessment;
 
 public class SkillsAssessmentDB {
+	
+	private String uniqueNumber;
+	
 	private String mainCategory;
 	
 	private String subCategoryA;
@@ -13,20 +16,19 @@ public class SkillsAssessmentDB {
 	
 	private String userID;
 	
-	private int uniqueNumber;
-	
 	public SkillsAssessmentDB() {
 		
 	}
 	
-	public SkillsAssessmentDB(String mainCategory, String subCategoryA, String subCategoryC, String rating, String personRated, String userID, int uniqueNumber) {
+	public SkillsAssessmentDB(String uniqueNumber ,String mainCategory, String subCategoryA, String subCategoryC, String rating, String personRated, String userID) {
+		super();
+		this.setUniqueNumber(uniqueNumber);
 		this.setMainCategory(mainCategory);
 		this.setSubCategoryA(subCategoryA);
 		this.setSubCategoryC(subCategoryC);
 		this.setRating(rating);
 		this.setPersonRated(personRated);
 		this.setUserID(userID);
-		this.setUniqueNumber(uniqueNumber);
 	}
 
 	public String getMainCategory() {
@@ -77,11 +79,11 @@ public class SkillsAssessmentDB {
 		this.userID = userID;
 	}
 
-	public int getUniqueNumber() {
+	public String getUniqueNumber() {
 		return uniqueNumber;
 	}
 
-	public void setUniqueNumber(int uniqueNumber) {
+	public void setUniqueNumber(String uniqueNumber) {
 		this.uniqueNumber = uniqueNumber;
 	}
 
